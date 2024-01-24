@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 23 ene. 2024, 20:29:10
+    Author     : dfons
+*/
+
+#tituloPrincipal {
+    color:aquamarine;
+    font-family: sans-serif;
+    
+}
+
+.parrafoSecundario{
+    color:blue;
+    font-size:24px ; 
+    
+}
+
+p{
+    background-color: antiquewhite;
+}
