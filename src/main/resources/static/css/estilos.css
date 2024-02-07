@@ -22,3 +22,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 p{
     background-color: antiquewhite;
 }
+
+a:link{
+    color: chocolate
+}
+
+a:visited{
+    color: aquamarine
+}
