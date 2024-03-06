@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml"       xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"       
+      xmlns:th="http://www.thymeleaf.org">
     <head th:fragment="head">
         <title>TechShop</title>
         <meta charset="UTF-8" />
@@ -8,8 +9,9 @@
         <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
         <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
         <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
-        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>    
-    </head>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>   
+        <script th:src="@{/js/rutinas.js}" type="text/javascript"></script>
+    </head> 
     <body>
         <header th:fragment="header" class="header">
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
@@ -58,5 +60,6 @@
                 </div>
             </div>
         </footer>
-    </body>
+
+    </body>
 </html>
