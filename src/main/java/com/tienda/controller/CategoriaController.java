@@ -3,6 +3,7 @@ package com.tienda.controller;
 import com.tienda.domain.Categoria;
 import com.tienda.service.CategoriaService;
 import com.tienda.service.impl.FirebaseStorageServiceImpl;
+import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,12 +23,12 @@ public class CategoriaController {
     private CategoriaService categoriaService;
 
     @GetMapping("/listado")
-    public String inicio(Model model) {
-        var categorias = categoriaService.getCategorias(false);
-        model.addAttribute("categorias", categorias);
-        model.addAttribute("totalCategorias", categorias.size());
-        return "/categoria/listado";
-    }
+     public String inicio(Model model) {
+        //List<Categoria> lista = categoriaService.getCategorias(false);
+        List<Categoria> lista= categoriaService.buscarPorDescripcion("Tarjeta Madre");
+        model.addAttribute("categorias", lista);
+        model.addAttribute("totalCategorias",lista.size());
+        return "/categoria/listado";}
     
     @GetMapping("/nuevo")
     public String categoriaNuevo(Categoria categoria) {
